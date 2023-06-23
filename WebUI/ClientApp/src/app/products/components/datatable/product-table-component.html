@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Service Name</th>
+      <th scope="col">{{category}} Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let element of dataSource">
+      <td>{{element.productName}}</td>
+      <td>{{element.serviceName}}</td>
+      <td>{{element.volume}}</td>
+    </tr>
+  </tbody>
+</table>

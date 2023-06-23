@@ -1,0 +1,13 @@
+<div *ngIf="isLoaded">
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    style="width: 100%; height: 400px; display: block"
+  ></highcharts-chart>
+
+  <product-table
+    [category]="selectedCategory"
+    [data]="productDtos"
+    *ngIf="showTable"
+  ></product-table>
+</div>
